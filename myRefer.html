@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hola! este es mi Hoja de Vida</title>
+	<link rel="stylesheet" type="text/css" href="myCV.css">
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="jcc.html" class="logo">JCC</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+
+		<div class="content">
+			<h2>Referencias</h2><br><br>
+				<p>
+					<h4>Alex Neuman</h4>
+					<p> tel: 6781-9505<br>Director de Sistemas Municipio de Panamá.</p><br>
+
+					<h4>Tomás Góndola</h4>
+					<p>	tel: 6747 8007<br>Departamento de Gráficas en TVN Noticias.</p><br>
+
+					<h4>Juan Antonio González</h4>
+					<p>tel: 6671 3565<br>Digital Color Panamá.</p><br>
+
+					<h4>Javier Álvarez</h4>
+					<p>  tel: 6512 1995<br>ExpressDesign / Indiglobal express.
+					</p><br>
+							
+		</div>
+	
+	</section>
+	<div id="navigation">
+		<div id="navigation">
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="myExp.html">Experiencia</a></li>
+			<li><a href="myEduc.html">Educacion</li>
+			<li><a href="myRefer.html">Referencias</a></li>
+			<li><a href="myPortafolio.html">muestras</a></li>
+			<li><a href="myDemo.html">Demo reel</a></li>
+			<li><a href="vr.html">VR</a></li>
+		</ul>
+	</div>
+
+  	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+
+
+</body>
+</html>

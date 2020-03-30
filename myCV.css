@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Poppins',sans-serif;
+}
+
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 100px;
+	z-index: 10000;
+	transition: 0.6s;
+}
+header .logo{
+	position: relative;
+	font-weight: 700;
+	color: #1c1c1c;
+	text-decoration: none;
+	font-size: 21px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: 0.6s;
+}
+
+header #toggle{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+}
+header #toggle:before{
+	content:'';
+	position:absolute;
+	top: 7px;
+	width: 50px;
+	height: 5px;
+	border-radius: 3px;
+	background:rgb(183, 57, 12);
+	}
+
+header #toggle:after{
+	content:'';
+	position:absolute;
+	bottom: 7px;
+	width: 50px;
+	height: 5px;
+	border-radius: 3px;
+	background:rgb(183, 57, 12);
+	}
+.banner.active header #toggle:before{
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.banner.active header #toggle:after{
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+.banner{
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	padding: 100px;
+	background-image: url(img/bg1a.jpg);
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	z-index: 2;
+}
+
+.banner.active{
+	transform: translate(-400px);
+}
+
+#navigation{
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 100vh;
+	background:linear-gradient(90deg, rgb(183, 57, 12),rgb(229, 127, 73));
+	/*linear-gradient(0deg, rgb(94, 5, 4),rgb(253, 19, 61));*/
+	z-index: 1;
+	display: grid;
+	align-items: center;
+	transition: 0.5s;
+}
+
+
+
+#galeria ul li{
+	list-style: none;
+	position:relative;
+	width: 20%;
+	height: 60%;
+	border-right: 1px, solid#fff;
+	float: left;
+	box-sizing: border-box; 
+	transition: 0.6s;
+	text-align: center;
+	overflow:hidden;
+}
+
+#galeria ul:hover li{
+	width: 10%;
+}
+#galeria ul li:hover{
+	width: 59%;
+}
+
+#galeria ul li.imagen{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background:rgba(0,0,0, .8);
+	box-sizing: border-box;
+	color:#ff0000;
+}
+
+#galeria ul li:hover.imagen{
+	bottom: 0;
+	transition: 0.5s;
+	transition-delay: 0.6s;
+	opacity: 1;	
+}
+
+#navigation.active{
+	right: -3px;
+}
+#navigation ul{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+#navigation ul li{
+	list-style: none;
+}
+
+#navigation ul li a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 2em;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.content2{
+	max-width: 750px;
+}
+.content{
+	max-width: 600px;
+}
+.content h2{
+	color: #fff;
+	font-size: 2.5em;
+}
+
+.content h4{
+	color:rgb(183, 57, 12);
+	font-size: 0.90em;
+}
+.content h2 span{
+	color:rgb(183, 57, 12);
+	font-size:1.2em;
+}
+
+.content p{
+	font-size: 0.75em;
+	color:#fff;
+
+}
+
+.content2 p{
+	font-size: 1.2em;
+	color:#fff;
+	font-weight: 300;
+}
+
+.content a{
+	position: relative;
+	display: inline-block;
+	margin-top: 20px;
+	background-color: #fff;
+	color: #000;
+	padding: 10px 30px;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: 500;
+}
+
+.sci{
+	position: absolute;
+	display: flex;
+	flex-direction:column;
+	right:100px;
+}
+
+.sci li{
+	list-style: none;
+}
+
+.sci li a {
+	position: relative;
+	display: grid;
+	place-items:center;
+	width: 50px;
+	height: 50px;
+	text-decoration: none;
+	border: 1.3px solid rgb(183, 57, 12);
+	margin: 10px 0 0;
+}
+
+.sci li a :hover{
+	background:#fff;
+}
+
+.sci li a img{
+	max-width: 20px;
+	filter:invert(1);
+	mix-blend-mode: difference;
+}
+
+@media (max-width: 767px){
+	header{
+		/*position: absolute;
+		top:0;
+		left:0;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;*/
+		padding: 20px 50px;
+	}
+
+	.banner{
+		padding: 100px 50px 150px;
+	}
+
+	.banner2 h2{
+		font-size: 1.9em;
+	}
+	.banner .content p,
+	.banner .content a
+	{
+		font-size: 1em;
+	}
+
+	.banner.active{
+		transform: translateX(-255px);
+	}
+	#navigation{
+		width: 250px;
+	}
+	#navigation ul li a{
+		font-size: 1.5em;
+		margin: 5px 0;
+	}
+
+	.sci{
+		position: absolute;
+		bottom:50px;
+		right: initial;
+		flex-direction: row;
+	}
+
+	.sci li a{
+		margin: initial;
+		margin-right: 10px;
+	}
+
+	.content2{
+	max-width: 198px;
+}
+.content2 p{
+	color: #fff;
+}
+.h4{
+	color: #fff;
+}
+
+}

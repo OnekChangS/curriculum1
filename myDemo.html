@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hola! este es mi Hoja de Vida</title>
+	<link rel="stylesheet" type="text/css" href="myCV.css">
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="jcc.html" class="logo">JCC</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		<div class="content2">
+		<div id="galeria">
+			<p style="color:rgb(183, 57, 12);">DEMO</p>
+		<iframe width="425" height="315" src="https://www.youtube.com/embed/rTmM18UwaII" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				
+		</div>
+		</div>
+	</section>
+
+
+	<div id="navigation">
+		<div id="navigation">
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="myExp.html">Experiencia</a></li>
+			<li><a href="myEduc.html">Educacion</li>
+			<li><a href="myRefer.html">Referencias</a></li>
+			<li><a href="myPortafolio.html">muestras</a></li>
+			<li><a href="myDemo.html">Demo reel</a></li>
+			<li><a href="vr.html">VR</a></li>
+		</ul>
+		
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

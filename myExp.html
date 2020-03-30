@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hola! este es mi Hoja de Vida</title>
+	<link rel="stylesheet" type="text/css" href="myCV.css">
+	<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+	<section class="banner" id="sec">
+		<header>
+			<a href="jcc.html" class="logo">JCC</a>
+			<div id="toggle" onclick="toggle()"></div>
+		</header>
+		
+		<ul class="sci">
+			<li><a href="https://www.facebook.com"><img src="img/facebook.png"></a></li>
+			<li><a href="https://www.instagram.com/juancachangsant/"><img src="img/insta.png"></a></li>
+			<li><a href="https://www.linkedin.com/in/juan-carlos-chang-santamaria-629b51176/"><img src="img/linkedin.png"></a></li>
+		</ul>
+
+			<div class="content">
+			<h2>Experiencia Laboral</h2><br><br>
+				<p>
+					<h4>MUNICIPIO DE PANAMÁ 2014- Hasta la fecha</h4>
+					<p>Colaboración en la elaboración de plantillas, formularios digitales
+					y sitios web utilizando wordpress o html,css,js.</p><br>
+
+					<h4>TELEVISORA NACIONAL TVN 2013 -2014</h4>
+					<p>Colaboración en la elaboración de material para la pre-venta 2014. Diseño 
+			        de gráficos en After Efects, en el Departamento de Noticias.</p><br>
+
+					<h4>ThePanamaSolution.com 2011-2012</h4>
+					<p>Elaboración de material gráfico y mantenimiento para los sitios web: theforexnittygritty.com
+					y thePanamaSolution.com <br>( inactivos actualmente ).</p><br>
+
+					<h4>DIGITAL COLOR PANAMA 1999 -2011</h4>
+					<p>Encargado del Departamento de Fotomecánica. Revisión de la separación de colores para negativos e
+					impresión de planchas(CTP).
+					</p><br>
+							
+		</div>
+
+	</section>
+	<div id="navigation">
+		<div id="navigation">
+		<ul>
+			<li><a href="index.html">INICIO</a></li>
+			<li><a href="myExp.html">Experiencia</a></li>
+			<li><a href="myEduc.html">Educacion</li>
+			<li><a href="myRefer.html">Referencias</a></li>
+			<li><a href="myPortafolio.html">muestras</a></li>
+			<li><a href="myDemo.html">Demo reel</a></li>
+			<li><a href="vr.html">VR</a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var sec = document.getElementById('sec');
+			var nav = document.getElementById('navigation');
+			sec.classList.toggle('active');
+			nav.classList.toggle('active');
+		}
+	</script>
+
+
+</body>
+</html>
